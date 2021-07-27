@@ -1,5 +1,6 @@
 # vaccination-status
 This project can be run in two ways on your computer:  
+**Download whole source code at once(keep it under one project folder)** 
 1. Using PyCharm,Spyder or any other python code editor  
   I. Open the Mainwork.py file into your code editor    
   II. Make sure that you have a stable internet connection for API to load  
