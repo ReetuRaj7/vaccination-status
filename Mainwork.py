@@ -12,8 +12,7 @@ from plotly.offline import download_plotlyjs, init_notebook_mode, plot, plot
 df1 = pd.read_csv("http://api.covid19india.org/csv/latest/vaccine_doses_statewise_v2.csv")
 
 #Date and Time Management Stuff
-today = datetime.date.today()
-todayfinal = today-datetime.timedelta(days=2)
+todayfinal = datetime.datetime.strptime("Oct 31 2021","%b %d %Y")
 td = todayfinal.strftime("%d/%m/%Y")
 use_date = todayfinal.strftime("%d %B %Y")
 mainframe=df1[df1['Vaccinated As of'] == td]
